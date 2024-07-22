@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<p>The length of the string is:</p>
+    <p id="demo"></p>
+ 
+    <p>The charAt() Method</p>
+    <p id="demo1"></p>
+
+    <p>The charCodeAt() Method</p>
+    <p id="demo2"></p>
+
+    <p>The At() Method</p>
+    <p id="demo3"></p>
+
+    <p>Bracket Notation[]</p>
+    <p id="demo4"></p>
+
+    <p>Property access on strings</p>
+    <p id="demo5"></p>
+
+    <p>The  string slice() Method</p>
+    <p id="demo6"></p>
+
+
+
+
+	<script>
+		// string length
+		let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        document.getElementById("demo").innerHTML = text.length;
+        //charAt()
+        var text1 = "HELLO WORLD";
+        document.getElementById("demo1").innerHTML = text1.charAt(6);
+        //charCodeAt() Method
+        var text2 = "HELLO WORLD";
+        document.getElementById("demo2").innerHTML = text2.charCodeAt(6);
+        //At() Method
+        const name = "HELLO WORLD";
+        let letter = name.at(2);
+        document.getElementById("demo3").innerHTML = letter;
+        //Bracket Notation[]
+        const name1 = "HELLO WORLD";
+        let letter1 = name1[4];
+        document.getElementById("demo4").innerHTML = letter1;
+        //Property access on strings
+        let text3 = "HELLO WORLD";
+        document.getElementById("demo5").innerHTML = text3[1];
+        //string slice() Method
+        let text4 = "Apple, Banana, Kiwi";
+        let part = text4.slice(1,4);
+        document.getElementById("demo6").innerHTML = part; 
+</script>
+
+    </script>
+</body>
+</html>

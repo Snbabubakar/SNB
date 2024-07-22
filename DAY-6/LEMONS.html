@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Lemon Checker</title>
+</head>
+<body>
+    <h1>Lemon Checker</h1>
+    <input type="number" id="lemonsInput" >
+    <button onclick="checkLemons()">Check</button>
+    <p id="result"></p>
+    <script>
+        function checkLemons() {
+           
+            const lemons = parseInt(document.getElementById('lemonsInput').value);
+            let resultText;
+            switch (true) {
+                case (lemons < 21):
+                    resultText = "you need "+(21-lemons)+" more lemons";
+                    break;
+                case (lemons > 21):
+                    resultText = 'you have '+(lemons-21)+ ' extra lemons';
+                    break;
+                 default:
+                    resultText = 'you have exactly 21 lemons.';
+                    break;
+            }
+            document.getElementById('result').textContent = resultText;
+        }
+    </script>
+</body>
+</html>
